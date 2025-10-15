@@ -104,12 +104,35 @@
 // import {studentData} from "./studentdata.js";
 // console.log(studentData);
 
-class Car{
-    constructor(make, model, year){
-        this.make = make;
-        this.model = model;
-        this.year = year;
-    }
-}
-let car = new Car("Toyota", "Corolla", 2023);
-console.log(car);
+// class Car{
+//     constructor(brand, model, year){
+//         this.brand = brand;
+//         this.model = model;
+//         this.year = year;
+//     }
+//     display(){
+//         console.log(`This is a ${this.brand} ${this.model} from ${this.year}`);
+//     }
+//     start(){
+//         console.log("Car started");
+//     }
+// }
+
+// class ElectricCar extends Car{
+//     constructor(batteryLife, brand, model, year){
+//         super(brand, model, year);
+//         this.batteryLife = batteryLife;
+//     }
+//     start(){
+//         console.log("Electric Car started silently");
+//     }
+// }
+
+// let car = new Car("Toyota", "Corolla", 2023);
+// let electricCar = new ElectricCar("Tata", "Nexon", 2023, 100);
+// car.display();
+// electricCar.display();
+// electricCar.start();
+
+import add from "./math.js";
+console.log(add(10, 20));
