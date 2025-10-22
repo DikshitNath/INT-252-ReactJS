@@ -5,6 +5,10 @@ import Header from './components/Header.jsx'
 import Footer from './components/Footer.jsx'
 import Course from './components/Course.jsx'
 import Car from './components/Car.jsx'
+import College from './components/College.jsx'
+import UserCard from './components/UserCard.jsx'
+import ProductCard from './components/ProductCard.jsx'
+import Parent from './components/Parent.jsx'
 
 function App() {
 
@@ -20,6 +24,13 @@ function App() {
     return "Hello";
   }
 
+  
+      const departments = [
+  'CSE', 'ECE', 'IT', 'MECH', 'MECH ENG', 'CIVIL', 'ELECT', 
+  'MATH', 'PHYSICS', 'CHEMISTRY', 'BIOLOGY', 'ECONOMICS', 
+  'HISTORY', 'GEOGRAPHY'
+];
+
 
   return (
     <div className='w-[100vw] h-[100vh] bg-gray-100 flex flex-col justify-center items-center'>
@@ -31,8 +42,19 @@ function App() {
       <p>Today's date is {new Date().toDateString()}</p>
       <p>{firstName + ' ' + lastName}</p> */}
       
-      <Car brand='Toyota' model='Corolla' year='2020'/>
-      <h1>{display()}</h1>
+      {/* <Car brand='Toyota' model='Corolla' year='2020'/>
+      <h1>{display()}</h1> */}
+      {/* 
+      <College 
+        college='LPU' 
+        location='Phagwara' 
+        year='2025' 
+        departments={departments} 
+      /> */}
+
+      {/* <UserCard name='Dikshit' email='dikshitnath@gmail.com' city='New Delhi' /> */}
+      <ProductCard name='Nike Sneaker' price='1000' category='Sneakers' />
+
 
     </div>
   )
